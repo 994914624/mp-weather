@@ -1,0 +1,20 @@
+<!--pages/mypage/mypage.wxml-->
+<view class="parent">
+  <view class="img">
+    <text class="txt">{{today_forecast}}</text>
+    <image  mode="aspectFit" src="{{today_src}}" ></image>
+  </view>
+
+   <view class="img">
+  <text class="txt">{{tomorrow_forecast}}</text>
+  <image   mode="aspectFit" src="{{tomorrow_src}}" ></image>
+   </view>
+   <view class="img">
+  <text class="txt">{{next_forecast}}</text>
+  <image   mode="aspectFit" src="{{next_src}}" ></image>
+  </view>
+  <audio  src="{{src}}" id="myAudio" ></audio>
+
+  <navigator class="btn" hover-class="none" target="miniProgram" open-type="exit"> 关闭</navigator>
+ 
+</view>
